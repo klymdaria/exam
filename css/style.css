@@ -1,0 +1,391 @@
+@font-face {
+	font-family: 'Josefin Sans';
+	src: url(../fonts/JosefinSans-Bold.ttf);
+ 	font-weight: 900;
+}
+@font-face {
+	font-family: 'Josefin Sans';
+ 	src: url(../fonts/JosefinSans-Light.ttf);
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Josefin Sans';
+	src: url(../fonts/JosefinSans-Regular.ttf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Josefin Sans';
+	font-weight: 300;
+	src: url(../fonts/JosefinSans-SemiBold.ttf); 
+}
+@font-face {
+	font-family: Aleo;
+	src: url(../fonts/Aleo/Aleo-Bold.otf);
+	src: url(../fonts/Aleo/Aleo-Light.otf);
+	src: url(../fonts/Aleo/Aleo-Regular.otf);
+}
+
+body {
+	margin: 20px;
+	font: 300 16px/1.5 'Josefin Sans', sans-serif;
+	color:  #e8e8e8;
+}
+
+/* Layout */
+.ba-container {
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1150px;
+}
+
+
+/* Typography */
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+}
+a,
+input[type="submit"],
+input[type="button"],
+button {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+	display: inline-block;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {}
+
+textarea {}
+
+/* Search */
+
+.ba-search {
+	background: url(../img/bg1.jpg);
+}
+
+.ba-search__title {
+	font: 900 48px/1.4 'Josefin Sans', sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: 0;
+	padding-top: 230px;
+	text-align: center;
+}
+
+.ba-search__subtitle {
+	font: 400 22px/1.2 'Josefin Sans', sans-serif;
+	color: #ffffff;
+	letter-spacing: 8px;
+	margin: 0;
+	text-align: center;
+	padding: 0px 0 50px;
+}
+
+.ba-search-form {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 120px;
+}
+
+.ba-search-form [name="search"] {
+	background-color: #ffffff;
+	width: 38%;
+	border: none;
+	font: 400 14px/1.7 'Josefin Sans', sans-serif;
+	color: #999999;
+	text-align: center;
+	padding: 0 20px;
+}
+
+.ba-search-form [type="submit"] {
+	font: 400 14px/1.2 Aleo, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	width: 170px;
+	height: 55px;
+	padding: 20px 50px 20px 35px;
+	background: url(../img/loop.png) 85% 50% no-repeat;
+	align-self: center;
+	border: 2px solid #fff;
+	background-color: #5474fd;
+}
+
+
+.ba-search-form [type="submit"]:hover {
+	background-color: rgb(84, 116, 253, 0.5);
+}
+
+.ba-scroll {
+	color: #fff;
+	font: 300 14px/1.2 'Josefin Sans', sans-serif;
+	text-align: center;
+	margin: 0;
+	padding-bottom: 135px;
+}
+
+/* Menu */
+.ba-header{
+	background-color: #5474fd;
+}
+
+.ba-logo {
+	display: block;
+}
+
+.ba-header-main{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 0;
+}
+
+.ba-menu {
+	display: flex;
+	padding: 0;
+	list-style: none;
+	padding-right: 17px;
+}
+
+.ba-menu a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font: 300 14px/1.2 Aleo, sans-serif;
+	color:  #ffffff;
+}
+.ba-menu li+li {
+	padding-left: 45px;
+}
+
+.ba-menu a:hover{
+	border-bottom: 2px solid #fff;
+}
+
+/* Section 3 */
+
+.ba-choose{
+	background: url(../img/bg12.jpg) no-repeat;
+	background-size: cover;
+}
+
+.ba-block__title{
+	font: 300 36px/1 Aleo, sans-serif;
+	color:  #ffffff;
+}
+
+.ba-choose .ba-block__title{
+	padding: 205px 0 60px;
+}
+
+.ba-choose__info{
+	padding-bottom: 100px;
+}
+
+.ba-button{
+	background-color: #5474fd;
+	padding: 21px 37px;
+	font: 300 16px/1.5 Aleo, sans-serif;
+	color:  #ffffff;
+	text-decoration: none;
+	letter-spacing:3px;
+	text-transform: uppercase;
+}
+
+.ba-button:hover{
+	background-color: rgb(84, 116, 253, 0.5);
+}
+
+.ba-choose .ba-button{
+	margin-bottom: 130px;
+}
+
+.ba-choose__photo{
+	padding-top: 50px;
+	position: relative;
+}
+
+.ba-choose__photo--first{
+	position: absolute;
+	padding-left: 66px;
+}
+
+.ba-choose__photo--second{
+	position: absolute;
+	right:0;
+	top: 275px;
+}
+
+/* Icon */
+
+.ba-icon{
+	background-color: #333333;
+	padding: 95px 70px;
+}
+
+.ba-icon__pictures{
+	display:flex;
+	
+}
+
+.ba-icon__text{
+	font: 400 36px/1.2 Aleo, sans-serif;
+	color:  #e8e8e8;
+}
+
+.ba-icon__self{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+/* Spain */
+
+.ba-Spain{
+	background: url(../img/bg2.jpg) no-repeat 100%;
+	background-size: cover;
+}
+
+.ba-suptitle{
+	font: 300 20px/1.2 'Josefin Sans', sans-serif;
+	color:  #e8e8e8;
+	padding-bottom: 30px;
+}
+
+.ba-suptitle--town{
+	text-transform: uppercase;
+}
+
+.ba-block-dark{
+	background-color: rgba(35, 35, 35, 0.9);
+	padding: 45px 30px 50px;
+	margin: 230px 0;
+}
+
+.ba-Madrid__text{
+	padding-bottom: 50px;
+}
+
+/* Madrid */
+
+.ba-Madrid{
+	background: url(../img/bg4.jpg) no-repeat 100%;
+	background-size: cover;
+}
+
+/* Comment */
+
+.ba-comments{
+	background: url(../img/bg5.jpg) no-repeat 100%;
+	background-size: cover;
+	outline: none;
+}
+
+.ba-block__title--comment{
+	text-align: center;
+	padding: 120px 0 90px;
+}
+
+.ba-comments-review{
+	background-color: #333333;
+	display: flex;
+	margin-bottom: 200px;
+}
+
+
+.ba-comments__name{
+	font: 400 20px/1.3 'Josefin Sans', sans-serif;
+	color:  #fefefe;
+	text-transform: uppercase;
+}
+
+.ba-comments__info{
+	padding: 50px 65px 50px 27px;
+}
+
+.fa-quote-left{
+	color: #5474fd;
+}
+
+.ba-comments__text{
+	position: relative;
+	text-indent: 1.5em;
+}
+
+.ba-comments__photo{
+	height: 100%;
+}
+
+.ba-comments__text::before {
+	content: '“';
+	position: absolute;
+	top: -10px;
+	left: -30px;
+	font-family: Georgia, sans-serif;
+	color: #5474fd;
+	font-size: 45px;
+	font-weight: 900;
+	line-height: 1;
+}
+
+/* Footer */
+.ba-footer-menu{
+	background-color:#232323;
+	outline: none;
+	padding: 125px 0 50px;
+}
+
+.ba-footer-menu__logo{
+	text-align:center;
+}
+.ba-footer-menu__sublogo{
+	font: 400 16px/1.6 'Josefin Sans', sans-serif;
+	color:  #ffffff;
+	text-align:center;
+}
+
+.ba-footer-menu__social{
+	display: flex;
+	justify-content: center;
+}
+
+
+.ba-footer-menu__social a{
+	color: #fff;
+	width:16px;
+	height: 16px
+}
+
+.ba-footer-menu__social--new a{
+	color:  #5474fd;
+}
+
+.ba-footer-menu__social a+a{
+	margin-left: 20px;
+}
